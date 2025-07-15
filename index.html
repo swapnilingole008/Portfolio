@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapnil Ingole - Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --bg: #f4f8fb;
+            --white: #fff;
+            --text: #222;
+            --card-shadow: 0 4px 16px rgba(37,99,235,0.07);
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+            border-radius: 0 0 24px 24px;
+            box-shadow: var(--card-shadow);
+        }
+        header h1 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+        section {
+            max-width: 850px;
+            margin: 2.5rem auto;
+            padding: 2rem 1.5rem;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        h2 {
+            color: var(--primary);
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 0;
+        }
+        .project {
+            background: #f6faff;
+            border: 1px solid #e3eefe;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(37,99,235,0.04);
+            padding: 1.2rem 1rem 1rem 1rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .project:hover {
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 8px 24px rgba(37,99,235,0.10);
+        }
+        .contact-links {
+            margin-top: 1rem;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin-right: 1.2rem;
+            color: var(--primary);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+        .contact-links a:hover {
+            color: var(--primary-light);
+            text-decoration: underline;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            header {
+                padding: 2rem 0.5rem 1.2rem 0.5rem;
+            }
+            section {
+                padding: 1.2rem 0.5rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            color: #888;
+            font-size: 1rem;
+            margin: 2rem 0 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Swapnil Ingole</h1>
+        <p>Welcome to my personal portfolio website!</p>
+    </header>
+
+    <section id="about-me">
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
+        <p>
+            I'm an engineering student with a strong interest in software development, web technologies, and problem-solving. I'm passionate about building efficient, user-friendly applications and continuously improving my programming skills. My goal is to become a well-rounded developer capable of creating meaningful tech solutions.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fa-solid fa-code"></i> Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>MERN Stack</li>
+            <li>GitHub</li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2><i class="fa-solid fa-lightbulb"></i> Interests</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Artificial Intelligence & Machine Learning</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+        <div class="project">
+            <h3>E-Commerce Website</h3>
+            <p>A full-featured e-commerce platform built using the MERN stack. Features include product listings, user authentication, and a shopping cart.</p>
+        </div>
+        <div class="project">
+            <h3>Face Recognition App</h3>
+            <p>An application that uses machine learning techniques to recognize faces from images or video streams.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2><i class="fa-solid fa-envelope"></i> Contact Information</h2>
+        <p>Email: <a href="mailto:swapnilingole008@gmail.com">swapnilingole008@gmail.com</a></p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/swapnil-ingole-903bb3370/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/swapnilingole008" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Swapnil Ingole. All rights reserved.
+    </footer>
+</body>
+</html> 
